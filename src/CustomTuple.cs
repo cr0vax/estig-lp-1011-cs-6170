@@ -8,8 +8,8 @@ namespace rebides
 	{
 
 		List<string> strData = new List<string>();			// stores string columns
-		int iCounter;										// stores integer columns
-		Boolean blnHasCounter;								// defines if it has integer columns
+		//int iCounter;										// stores integer columns
+		//Boolean blnHasCounter;								// defines if it has integer columns
 		
 		/*
 		 * Class constructor without counter
@@ -21,15 +21,15 @@ namespace rebides
 			foreach (string item in lData) {
 				this.strData.Add(item);
 			}
-			this.blnHasCounter = false;
 		}
-		
+
 		/*
 		 * Class constructor with counter
 		 * 
 		 * lData 		- list containing a list with string columns
 		 * iCounter 	- integer value containing counter for this line
 		 * */
+		/*
 		public CustomTuple (List<string> lData, int iCounter)
 		{
 			foreach (string item in lData) {
@@ -37,6 +37,11 @@ namespace rebides
 			}
 			this.iCounter = iCounter;
 			this.blnHasCounter = true;
+		}
+		*/
+		public List<string> getData()
+		{
+			return strData;
 		}
 		
 		/*
@@ -56,7 +61,7 @@ namespace rebides
 			}
 			
 			//Console.WriteLine(this.strData[0]);
-			
+			/*
 			// add int column to return string if it's tuple with counter
 			if ( this.blnHasCounter == true )
 			{
@@ -65,7 +70,7 @@ namespace rebides
 				//Console.WriteLine("Depois: " + returnString);
 				//Console.ReadKey(true);
 			}
-			
+			*/
 			//return string
 			return returnString;
 		}
