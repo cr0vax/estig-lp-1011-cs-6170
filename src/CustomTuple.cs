@@ -6,7 +6,6 @@ namespace rebides
 {
 	public class CustomTuple : IComparable<CustomTuple>
 	{
-
 		List<string> strData = new List<string>();			// stores string columns
 		//int iCounter;										// stores integer columns
 		//Boolean blnHasCounter;								// defines if it has integer columns
@@ -60,17 +59,6 @@ namespace rebides
 				returnString = returnString + strData[i] + ";";
 			}
 			
-			//Console.WriteLine(this.strData[0]);
-			/*
-			// add int column to return string if it's tuple with counter
-			if ( this.blnHasCounter == true )
-			{
-				//Console.WriteLine("Antes: " + returnString);
-				returnString = returnString + iCounter + ";";
-				//Console.WriteLine("Depois: " + returnString);
-				//Console.ReadKey(true);
-			}
-			*/
 			//return string
 			return returnString;
 		}
