@@ -878,6 +878,9 @@ namespace rebides
 					
 					// add tuple to temp list
 					tempList.Add(new CustomTuple(tempColumnList));
+						
+					// prepare tuples and lists for next reader
+					tempColumnList.Clear();
 				}
 				
 				// sort list
