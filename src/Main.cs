@@ -59,8 +59,7 @@
 		//l.make_ntmfeta();
 		
 		// number of teachers promoted to the next category each year per establishment
-		//l.make_ntptncpype();
-		
+		l.make_ntptncpype();
 		
 		Console.WriteLine("PROCESSO CONCLUÍDO");
 		
