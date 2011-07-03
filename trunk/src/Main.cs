@@ -8,13 +8,19 @@
  */
 
  using System;
+ using System.Linq;
  using rebides;
  
  public class Rebides
  {
     public static void Main(string[] args)
     {
+		// Delete file
+		System.IO.File.Delete("lists.txt");
+		
 		Lists l = new Lists();
+		
+		Console.WriteLine("PROCESSO INICIADO");
 		
 		// Total number of teachers in the higher education system per year
 		//l.make_tnthespy();
@@ -34,7 +40,7 @@
 		// The set of holders of a doctorate degree per establishment and per year
 		//l.make_shfdpepy();
 		
-		//TODO: The set of teachers that changed from one establishment to another one per year
+		//The set of teachers that changed from one establishment to another one per year
 		//l.make_stcfetapy();
 		
 		// list of establishments per year
@@ -46,20 +52,18 @@
 		// personnel leaving the institution per year
 		//l.make_pltipy();
 		
-		// TODO: VALIDAR new personnel in the institution per year
+		// new personnel in the institution per year
 		//l.make_npitipy();
 		
-		// TODO: number of teachers migrating from one establishment to another
+		// number of teachers migrating from one establishment to another
+		//l.make_ntmfeta();
 		
-		// TODO: number of teachers promoted to the next category each year per establishment
-		/*
+		// number of teachers promoted to the next category each year per establishment
+		//l.make_ntptncpype();
 		
-		reader.Close();
-		reader = null;
-		dbcmd.Dispose();
-		dbcmd = null;
-		dbRebides = null;
-		*/
-		Console.WriteLine("CONCLUÍDO");
+		
+		Console.WriteLine("PROCESSO CONCLUÍDO");
+		
+		l = null;
     }
  }
